@@ -15,7 +15,6 @@ const Navbar: React.FC = () => {
         <div className="text-white text-xl font-bold">MyPortfolio</div>
         <div className="space-x-4">
           <Link href="#home" className="text-white hover:text-gray-300">Home</Link>
-          <Link href="#about" className="text-white hover:text-gray-300">About</Link>
           <Link href="#experience" className="text-white hover:text-gray-300">Experience</Link>
           <Link href="#education" className="text-white hover:text-gray-300">Education</Link>
           <Link href="#skills" className="text-white hover:text-gray-300">Skills</Link>

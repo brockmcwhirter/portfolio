@@ -3,7 +3,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { FaGithub, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaEnvelope, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Sidebar: React.FC = () => {
@@ -31,6 +31,14 @@ const Sidebar: React.FC = () => {
             aria-label="Email"
           >
             <FaEnvelope size={50} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/macky-brock-mcwhirter-2053b2159/"
+            className="text-blue-400 hover:underline"
+            title="LinkedIn"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin size={50} />
           </a>
           <a
             href="https://github.com/brockmcwhirter"
