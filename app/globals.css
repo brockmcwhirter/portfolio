@@ -5,3 +5,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+a:hover {
+  color: #ffffff !important;
+  /* Change to white on hover */
+}

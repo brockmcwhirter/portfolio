@@ -1,12 +1,14 @@
 // src/pages/index.tsx
 import React from 'react';
 import Navbar from '../app/components/Navbar';
+import Sidebar from '../app/components/Sidebar';
 
 const Home: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="pt-16">
+      <Sidebar />
+      <div className="pl-64 pt-16">
         <section id="home" className="min-h-screen bg-gray-100 p-8 pt-24">
           <h1 className="text-4xl font-bold">Hello from the index page!</h1>
         </section>

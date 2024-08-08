@@ -10,9 +10,9 @@ const Navbar: React.FC = () => {
   const isSanityStudio = pathname.startsWith('/studio');
 
   return !isSanityStudio ? (
-    <nav className="fixed top-0 left-0 w-full bg-blue-600 p-4 z-10">
+    <nav className="fixed top-0 left-0 w-full bg-blue-600 p-4 z-20">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-xl font-bold">Brock McWhirter</div>
+        <div className="text-white text-xl font-bold">MyPortfolio</div>
         <div className="space-x-4">
           <Link href="#home" className="text-white hover:text-gray-300">Home</Link>
           <Link href="#about" className="text-white hover:text-gray-300">About</Link>
