@@ -48,7 +48,7 @@ const Home: React.FC = () => {
             <p className="text-lg">
               Prefer to see all my qualifications at a glance? Download my resume below.
             </p>
-            <a href="/path/to/your-resume.pdf" download className="inline-block bg-secondary text-light-text font-bold py-2 px-4 rounded hover:bg-accent transition duration-300 mt-4">
+            <a href="/MackyMcWhirterResume.pdf" download className="inline-block bg-secondary text-light-text font-bold py-2 px-4 rounded hover:bg-accent transition duration-300 mt-4">
               Download My Resume
             </a>
           </div>
