@@ -5,6 +5,8 @@ import React from 'react';
 import Image from 'next/image';
 import { FaGithub, FaEnvelope, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
 
+
+
 const Sidebar: React.FC = () => {
   return (
     <aside className="fixed top-0 left-0 h-full w-64 bg-primary dark:bg-dark-background p-4 z-10">
