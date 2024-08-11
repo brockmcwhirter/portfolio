@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from 'react';
-
-
+import React from 'react';
 
 const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
-
     <section id="home" className="min-h-screen bg-background dark:bg-dark-background dark:text-light-text p-8 pt-24">
       <h1 className="text-4xl font-bold">Welcome!</h1>
       <p className="mt-4 text-lg">
-        My name is Macky Brock McWhirter. I am a passionate technologist with a solid foundation in software engineering. I specialize in creating sophisticated software applications. I have a strong proficiency in machine learning, allowing me to construct and deploy complex models for various applications. Currently, I am pursuing a Master's degree in Electrical & Computer Engineering at Johns Hopkins University. My studies focus on an integrative approach that combines software engineering, machine learning, and Digital Signal Processing (DSP). This unique blend of disciplines enables me to merge theoretical insights with practical applications, preparing me for the challenges of these rapidly evolving fields. Welcome to my portfolio, where you can explore my work experience, educational background, technical skills, and projects that I have developed.
+        My name is Macky Brock McWhirter. I am a passionate technologist with a solid foundation in software engineering. I specialize in creating sophisticated software applications. I have a strong proficiency in machine learning, allowing me to construct and deploy complex models for various applications. Currently, I am pursuing a Master&apos;s degree in Electrical &amp; Computer Engineering at Johns Hopkins University. My studies focus on an integrative approach that combines software engineering, machine learning, and Digital Signal Processing (DSP). This unique blend of disciplines enables me to merge theoretical insights with practical applications, preparing me for the challenges of these rapidly evolving fields. Welcome to my portfolio, where you can explore my work experience, educational background, technical skills, and projects that I have developed.
       </p>
       <div className="mt-8">
         <p className="text-lg">
