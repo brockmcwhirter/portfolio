@@ -6,7 +6,7 @@ const educationData = [
     institution: 'Johns Hopkins University',
     degree: 'Master of Science in Electrical & Computer Engineering',
     period: '(IN-PROGRESS)',
-    coursework: ['Machine Learning using Signal Processing', 'Cloud Computing (AWS)', 'Digital Signal Processing', 'Computer Graphics (C++/OpenGL)', 'Deep Neural Networks'],
+    coursework: ['Machine Learning using Signal Processing', 'Cloud Computing (AWS)', 'Digital Signal Processing', 'Computer Graphics (C++/OpenGL)', 'Deep Neural Networks (Python/Tensorflow)'],
     logoLight: '/jhu-white-logo.png',  // White logo for dark mode
     logoDark: '/JHU-logo.png',         // Original logo for light mode
   },
