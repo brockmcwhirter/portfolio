@@ -6,14 +6,35 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 a:hover {
   color: #ffffff !important;
   /* Change to white on hover */
 }
 
-/* Add this to your global CSS file or a CSS module */
+/* Sidebar-specific styles */
+.sidebar img {
+  background-color: transparent;
+  /* Ensure no background on the image itself */
+}
+
+.sidebar h2,
+.sidebar .text-light-text,
+.sidebar .dark\:text-dark-text {
+  background-color: transparent;
+  /* Ensure no unwanted background on text elements */
+}
+
+.sidebar *::selection {
+  background-color: transparent;
+  /* Reset text selection background */
+  color: inherit;
+  /* Ensure text color remains consistent */
+}
+
+.sidebar *:focus {
+  outline: none;
+  /* Remove focus outline */
+}
 
 .slider {
   position: absolute;
