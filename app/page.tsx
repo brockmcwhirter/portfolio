@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import Education from './components/Education';
 
 const workExperience = [
   {
@@ -39,6 +40,21 @@ const workExperience = [
       'Fixed bugs in the event management and ticketing system.',
     ],
     logo: '/texas-tech-logo.png',
+  },
+];
+
+const educationData = [
+  {
+    institution: 'Johns Hopkins University',
+    degree: 'Master of Science in Electrical & Computer Engineering',
+    period: '(IN-PROGRESS)',
+    coursework: ['Machine Learning', 'Digital Signal Processing', 'Algorithms'],
+  },
+  {
+    institution: 'Texas Tech University',
+    degree: 'Bachelor of Science in Computer Engineering',
+    period: 'Graduated: May 2020',
+    coursework: ['Embedded Systems', 'Electronics', 'Microprocessor Architecture', 'Digital Signal Processing', 'Machine Learning', 'Pattern Recognition'],
   },
 ];
 
@@ -107,7 +123,7 @@ const Home: React.FC = () => {
                     ))}
                   </ul>
                 </div>
-                <div className="flex-shrink-0 w-64 h-64 flex items-start justify-center ml-8">
+                <div className="flex-shrink-0 w-128 h-64 flex items-start justify-center ml-8">
                   <Image
                     src={experience.logo as string}
                     alt={experience.company}
@@ -121,10 +137,7 @@ const Home: React.FC = () => {
           </div>
         </section>
 
-        <section id="education" className="min-h-screen bg-background dark:bg-dark-background dark:text-light-text p-8 pt-24">
-          <h1 className="text-4xl font-bold">Education</h1>
-          <p>My education...</p>
-        </section>
+        <Education darkMode={darkMode} />
         <section id="skills" className="min-h-screen bg-gray-200 dark:bg-dark-background dark:text-light-text p-8 pt-24">
           <h1 className="text-4xl font-bold">Skills</h1>
           <p>My skills...</p>
