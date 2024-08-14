@@ -1,56 +1,28 @@
 'use client';
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import About from './components/About';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
-
-
-
+import { useTheme } from 'next-themes';
 
 const Home: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const darkModePreference = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setDarkMode(darkModePreference);
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      setDarkMode(e.matches);
-    };
-
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    mediaQuery.addEventListener('change', handleChange);
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleChange);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
+  const { theme, setTheme } = useTheme();  // Access current theme and setTheme function
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setTheme(theme === 'dark' ? 'light' : 'dark');  // Toggle between dark and light mode
   };
 
   return (
     <div>
-      <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+      <Navbar toggleDarkMode={toggleDarkMode} darkMode={theme === 'dark'} />
       <Sidebar />
-      <div className="pl-64 ">
-
-        <About darkMode={darkMode} />
-        <Experience darkMode={darkMode} />
-        <Education darkMode={darkMode} />
+      <div className="pl-64">
+        <About darkMode={theme === 'dark'} />
+        <Experience darkMode={theme === 'dark'} />
+        <Education darkMode={theme === 'dark'} />
         <section id="skills" className="min-h-screen bg-gray-200 dark:bg-dark-background dark:text-light-text p-8 pt-24">
           <h1 className="text-4xl font-bold">Skills</h1>
           <p>My skills...</p>

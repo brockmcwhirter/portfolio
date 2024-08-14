@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDarkMode, darkMode }) => {
   return !isSanityStudio ? (
     <nav className="fixed top-0 left-0 w-full bg-primary dark:bg-dark-background p-4 z-20">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="flex-1 flex justify-center space-x-4">
+        <div className="flex flex-1 justify-center space-x-4">
           <Link href="#home" className="text-light-text dark:text-dark-text hover:text-secondary dark:hover:text-accent">Home</Link>
           <Link href="#experience" className="text-light-text dark:text-dark-text hover:text-secondary dark:hover:text-accent">Experience</Link>
           <Link href="#education" className="text-light-text dark:text-dark-text hover:text-secondary dark:hover:text-accent">Education</Link>

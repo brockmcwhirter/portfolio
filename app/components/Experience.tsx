@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
-
 
 const workExperience = [
   {
@@ -15,7 +14,8 @@ const workExperience = [
       'Automated workflows using PowerShell scripts and Automic.',
       'Managed CI/CD pipelines using Azure DevOps.',
     ],
-    logo: '/diamondback-energy-logo.png',
+    logoLight: '/diamondback-energy-logo.png',  // Light mode logo
+    logoDark: '/FANG_BIG.png',    // Dark mode logo
   },
   {
     company: 'Consolidated Nuclear Security (CNS) Pantex Plant',
@@ -26,7 +26,8 @@ const workExperience = [
       'Led the upgrade of legacy desktop applications for Windows 10 compatibility.',
       'Designed and developed desktop applications using C#, .NET, and WPF.',
     ],
-    logo: '/pantex-logo.png',
+    logoLight: '/pantex-logo.png',   // Light mode logo
+    logoDark: '/pantex-logo.png',     // Dark mode logo
   },
   {
     company: 'Texas Tech Application Development & Support',
@@ -36,7 +37,8 @@ const workExperience = [
       'Developed new modules for a payment system using Python 2.7 and Flask.',
       'Fixed bugs in the event management and ticketing system.',
     ],
-    logo: '/texas-tech-logo.png',
+    logoLight: '/texas-tech-logo.png', // Light mode logo
+    logoDark: '/texas-tech-logo.png',   // Dark mode logo
   },
 ];
 
@@ -49,19 +51,19 @@ const Experience: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           <div key={index} className="flex items-start justify-between"> {/* Flexbox with justify-between */}
             <div className="sm:w-3/4 max-w-full">
               <h3 className="text-2xl font-bold">{experience.role} - {experience.company}</h3>
-              <p className="text-gray-600">{experience.period}</p>
+              <p className="text-gray-600 dark:text-gray-400">{experience.period}</p>
               <ul className="list-disc list-inside mt-4 space-y-2">
                 {experience.description.map((desc, i) => (
                   <li key={i}>{desc}</li>
                 ))}
               </ul>
             </div>
-            <div className="flex-shrink-0 w-128 h-64 flex items-start justify-center ml-8">
+            <div className="flex-shrink-0 w-64 h-64 flex items-start justify-center ml-8">
               <Image
-                src={experience.logo as string}
-                alt={experience.company}
-                width={256} // Increased size (w-64)
-                height={256} // Increased size (h-64)
+                src={darkMode ? experience.logoDark : experience.logoLight}
+                alt={`${experience.company} logo`}
+                width={256}
+                height={256}
                 className=""
               />
             </div>

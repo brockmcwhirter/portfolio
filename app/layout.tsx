@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from 'next-themes';
+import ClientWrapper from './components/clientwrapper'; // Import the ClientWrapper component
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ClientWrapper>
+          <ThemeProvider attribute="class" enableSystem={true} defaultTheme="system">
+            {children}
+          </ThemeProvider>
+        </ClientWrapper>
+      </body>
     </html>
   );
 }

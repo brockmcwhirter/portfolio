@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 const educationData = [
@@ -24,7 +24,7 @@ const educationData = [
     period: 'Graduated: December 2017',
     coursework: ['Engineering Graphics (AutoCAD)', 'Fundamentals of Programming I (C++)', 'Fundamentals of Programming II (C++/OOP)', 'Calculus I, II, III', 'Differential Equations'],
     logoLight: '/spc-orange-logo.png',           // Orange logo for dark mode
-    logoDark: '/spc-orange-logo.png',                   // Original logo for light mode
+    logoDark: '/spc-orange-logo.png',            // Original logo for light mode
   },
 ];
 
@@ -49,7 +49,7 @@ const Education: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 alt={edu.institution}
                 width={256}
                 height={256}
-                className=""
+                className="object-contain"
               />
             </div>
           </div>
