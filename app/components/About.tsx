@@ -9,10 +9,10 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       </p>
       <div className="mt-8">
         <p className="text-lg">
-          Prefer to see all my qualifications at a glance? Download my resume below.
+          Prefer to see all my qualifications at a glance? View my resume below.
         </p>
-        <a href="/MackyMcWhirterResume.pdf" download className="inline-block bg-secondary text-light-text font-bold py-2 px-4 rounded hover:bg-accent transition duration-300 mt-4">
-          Download My Resume
+        <a href="https://drive.google.com/drive/folders/1I6pycIFp26E3hloy86wPBva1RvFjot1_?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-block bg-secondary text-light-text font-bold py-2 px-4 rounded hover:bg-accent transition duration-300 mt-4">
+          View My Resume
         </a>
       </div>
     </section>
