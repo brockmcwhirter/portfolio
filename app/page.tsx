@@ -19,7 +19,7 @@ const Home: React.FC = () => {
     <div>
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={theme === 'dark'} />
       <Sidebar />
-      <div className="pl-64">
+      <main className="pl-64">
         <About darkMode={theme === 'dark'} />
         <Experience darkMode={theme === 'dark'} />
         <Education darkMode={theme === 'dark'} />
@@ -32,8 +32,8 @@ const Home: React.FC = () => {
           <h1 className="text-4xl font-bold">Projects</h1>
           <p>My projects...</p>
         </section>
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 };

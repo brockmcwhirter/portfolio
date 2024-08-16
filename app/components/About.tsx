@@ -6,6 +6,11 @@ interface AboutProps {
 }
 
 const About: React.FC<AboutProps> = ({ darkMode }) => {
+  const content = [
+    "I'm Macky Brock McWhirter, a dedicated software engineer with a passion for developing innovative applications. My expertise spans software engineering and machine learning, where I excel in creating and deploying sophisticated models.",
+    "I'm currently pursuing a Master’s degree in Electrical & Computer Engineering at Johns Hopkins University. My focus combines software engineering with machine learning and Digital Signal Processing (DSP), enabling me to integrate theoretical insights with practical solutions. Explore my portfolio to learn more about my professional experience, academic background, technical skills, and the projects I’ve developed. I’m excited to share my journey and showcase the work that defines my career.",
+  ];
+
   return (
     <section
       id="about"
@@ -13,13 +18,11 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
     >
       <h1 className="text-4xl font-bold">Welcome!</h1>
       <div className="max-w-6xl">
-        <p className="mt-4 text-lg indent-8">
-          I&apos;m Macky Brock McWhirter, a dedicated software engineer with a passion for developing innovative applications. My expertise spans software engineering and machine learning, where I excel in creating and deploying sophisticated models.
-        </p>
-        <p className="mt-4 text-lg indent-8">
-          I&apos;m currently pursuing a Master&apos;s degree in Electrical & Computer Engineering at Johns Hopkins University. My focus combines software engineering with machine learning and Digital Signal Processing (DSP), enabling me to integrate theoretical insights with practical solutions. Explore my portfolio to learn more about my professional experience, academic background, technical skills, and the projects I&apos;ve developed. I&apos;m excited to share my journey and showcase the work that defines my career.
-        </p>
-
+        {content.map((paragraph, index) => (
+          <p key={index} className="mt-4 text-lg indent-8">
+            {paragraph}
+          </p>
+        ))}
         <div className="mt-8">
           <p className="text-lg">
             Interested in a quick overview? View my resume below.

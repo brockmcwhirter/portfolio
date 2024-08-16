@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+      },
       colors: {
         primary: '#FFFFFF', // White for all elements in light mode
         'dark-background': '#1F2937', // Dark background for dark mode
