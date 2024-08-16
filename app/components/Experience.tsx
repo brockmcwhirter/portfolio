@@ -44,14 +44,14 @@ const workExperience = [
 
 const Experience: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
-    <section id="experience" className="min-h-screen bg-gray-200 dark:bg-dark-background dark:text-light-text p-8 pt-24">
+    <section id="experience" className="min-h-screen bg-primary dark:bg-dark-background dark:text-light-text p-8 pt-24">
       <h1 className="text-4xl font-bold mb-8">Experience</h1>
-      <div className="space-y-16"> {/* Vertical spacing between items */}
+      <div className="space-y-16">
         {workExperience.map((experience, index) => (
-          <div key={index} className="flex items-start justify-between"> {/* Flexbox with justify-between */}
+          <div key={index} className="flex items-start justify-between">
             <div className="sm:w-3/4 max-w-full">
               <h3 className="text-2xl font-bold">{experience.role} - {experience.company}</h3>
-              <p className="text-gray-600 dark:text-gray-400">{experience.period}</p>
+              <p className="text-text dark:text-gray-400">{experience.period}</p>
               <ul className="list-disc list-inside mt-4 space-y-2">
                 {experience.description.map((desc, i) => (
                   <li key={i}>{desc}</li>
@@ -71,6 +71,7 @@ const Experience: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
         ))}
       </div>
     </section>
+
   );
 };
 

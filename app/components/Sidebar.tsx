@@ -9,21 +9,21 @@ const Sidebar: React.FC = () => {
     <aside className="fixed top-0 left-0 h-full w-64 bg-primary dark:bg-dark-background p-4 z-10">
       <div className="flex flex-col items-center mt-16">
         <Image
-          src="/linkedinprofile.jpg" // Ensure this path is correct
+          src="/linkedinprofile.jpg"
           alt="Profile Picture"
           width={150}
           height={150}
           className="rounded-full bg-transparent"
         />
-        <h2 className="text-2xl mt-4 text-light-text dark:text-dark-text bg-transparent">Brock McWhirter</h2>
-        <div className="flex items-center text-light-text dark:text-dark-text mt-2">
-          <FaMapMarkerAlt className="mr-2" size={24} />
+        <h2 className="text-2xl mt-4 text-text dark:text-light-text bg-transparent">Brock McWhirter</h2>
+        <div className="flex items-center text-text dark:text-light-text mt-2">
+          <FaMapMarkerAlt className="mr-2 icon" size={24} />
           <span className="bg-transparent">Lubbock, Texas</span>
         </div>
         <div className="mt-4 flex flex-col items-center space-y-4">
           <a
             href="mailto:brock@brockmcwhirter.dev"
-            className="text-secondary dark:text-accent hover:underline bg-transparent"
+            className="hover:underline bg-transparent icon"
             title="Email"
             aria-label="Email"
           >
@@ -31,7 +31,7 @@ const Sidebar: React.FC = () => {
           </a>
           <a
             href="https://www.linkedin.com/in/macky-brock-mcwhirter-2053b2159/"
-            className="text-secondary dark:text-accent hover:underline bg-transparent"
+            className="hover:underline bg-transparent icon"
             title="LinkedIn"
             aria-label="LinkedIn"
           >
@@ -39,7 +39,7 @@ const Sidebar: React.FC = () => {
           </a>
           <a
             href="https://github.com/brockmcwhirter"
-            className="text-secondary dark:text-accent hover:underline bg-transparent"
+            className="hover:underline bg-transparent icon"
             title="GitHub"
             aria-label="GitHub"
           >

@@ -23,10 +23,11 @@ const Home: React.FC = () => {
         <About darkMode={theme === 'dark'} />
         <Experience darkMode={theme === 'dark'} />
         <Education darkMode={theme === 'dark'} />
-        <section id="skills" className="min-h-screen bg-gray-200 dark:bg-dark-background dark:text-light-text p-8 pt-24">
+        <section id="skills" className="min-h-screen bg-primary dark:bg-dark-background dark:text-light-text p-8 pt-24">
           <h1 className="text-4xl font-bold">Skills</h1>
-          <p>My skills...</p>
+          <p className="text-text dark:text-gray-400">My skills...</p>
         </section>
+
         <section id="projects" className="min-h-screen bg-background dark:bg-dark-background dark:text-light-text p-8 pt-24 pb-16">
           <h1 className="text-4xl font-bold">Projects</h1>
           <p>My projects...</p>

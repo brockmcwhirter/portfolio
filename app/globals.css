@@ -24,6 +24,18 @@ a:hover {
   /* Ensure no unwanted background on text elements */
 }
 
+/* Icon colors in Sidebar */
+.sidebar .icon {
+  color: #1E3A8A;
+  /* Default to primary color in light mode */
+}
+
+.dark .sidebar .icon {
+  color: #60A5FA;
+  /* Accent color in dark mode */
+}
+
+
 .sidebar *::selection {
   background-color: transparent;
   /* Reset text selection background */

@@ -9,7 +9,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
   return (
     <section
       id="about"
-      className={`min-h-screen p-8 pt-24 ${darkMode ? 'bg-dark-background text-dark-text' : 'bg-background text-text'}`}
+      className={`min-h-screen p-8 pt-24 ${darkMode ? 'bg-dark-background text-light-text' : 'bg-primary text-text'}`}
     >
       <h1 className="text-4xl font-bold">Welcome!</h1>
       <div className="max-w-6xl">
@@ -28,7 +28,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
             href="https://drive.google.com/drive/folders/1I6pycIFp26E3hloy86wPBva1RvFjot1_?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-block font-bold py-2 px-4 rounded transition duration-300 mt-4 ${darkMode ? 'bg-dark-buttonBg text-dark-buttonText hover:bg-dark-accent' : 'bg-buttonBg text-buttonText hover:bg-accent'}`}
+            className={`inline-block font-bold py-2 px-4 rounded transition duration-300 mt-4 ${darkMode ? 'bg-dark-buttonBg text-dark-buttonText hover:bg-dark-accent' : 'bg-black text-white hover:bg-gray-800'}`}
           >
             View My Resume
           </a>
