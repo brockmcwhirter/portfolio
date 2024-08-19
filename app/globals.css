@@ -7,8 +7,8 @@ html {
 }
 
 a:hover {
-  color: #ffffff !important;
-  /* Change to white on hover */
+  color: #3B82F6 !important;
+  /* Secondary color for hover */
 }
 
 /* Sidebar-specific styles */
@@ -24,6 +24,18 @@ a:hover {
   /* Ensure no unwanted background on text elements */
 }
 
+/* Icon colors in Sidebar */
+.sidebar .icon {
+  color: #1E3A8A;
+  /* Default to primary color in light mode */
+}
+
+.dark .sidebar .icon {
+  color: #60A5FA;
+  /* Accent color in dark mode */
+}
+
+
 .sidebar *::selection {
   background-color: transparent;
   /* Reset text selection background */
@@ -36,6 +48,7 @@ a:hover {
   /* Remove focus outline */
 }
 
+/* Slider styles */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -43,7 +56,8 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #3B82F6;
+  /* Matching the secondary color */
   transition: 0.4s;
   border-radius: 34px;
 }
@@ -61,7 +75,8 @@ a:hover {
 }
 
 input:checked+.slider {
-  background-color: #2196F3;
+  background-color: #1E3A8A;
+  /* Matching the primary color */
 }
 
 input:checked+.slider:before {
@@ -74,4 +89,19 @@ input:checked+.slider:before {
 
 .round:before {
   border-radius: 50%;
+}
+
+/* Global text selection styles */
+::selection {
+  background-color: #60A5FA;
+  /* Accent color for light mode */
+  color: #FFFFFF;
+  /* White text on selection */
+}
+
+.dark ::selection {
+  background-color: #3B82F6;
+  /* Secondary color for dark mode */
+  color: #1F2937;
+  /* Dark text on selection */
 }

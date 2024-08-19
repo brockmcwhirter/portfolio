@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-primary dark:bg-dark-background text-light-text dark:text-dark-text py-8 px-4">
+    <footer className="bg-primary dark:bg-dark-background text-text dark:text-light-text py-8 px-4" role="contentinfo">
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left">
           <p>&copy; {new Date().getFullYear()} Brock McWhirter. All Rights Reserved.</p>

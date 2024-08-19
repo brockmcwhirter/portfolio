@@ -9,15 +9,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+      },
       colors: {
-        primary: '#1E3A8A', // Dark Blue
-        secondary: '#3B82F6', // Medium Blue
-        accent: '#60A5FA', // Light Blue
-        background: '#F3F4F6', // Light Gray
-        'dark-background': '#1F2937', // Dark Gray
-        text: '#111827', // Almost Black
-        'light-text': '#FFFFFF', // White
-        'dark-text': '#D1D5DB', // Light Gray for dark mode text
+        primary: '#FFFFFF', // White for all elements in light mode
+        'dark-background': '#1F2937', // Dark background for dark mode
+        text: '#000000', // Black text color for light mode
+        'light-text': '#FFFFFF', // White text color for dark mode
+        'dark-text': '#D1D5DB', // Light gray text color for dark mode
+        'buttonBg': '#FFFFFF', // Button background in light mode (same as primary)
+        'dark-buttonBg': '#374151', // Darker button background in dark mode
+        'buttonText': '#000000', // Black text for buttons in light mode
+        'dark-buttonText': '#F3F4F6', // Light text for buttons in dark mode
       },
     },
   },
