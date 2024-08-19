@@ -17,19 +17,19 @@ const Home: React.FC = () => {
 
   return (
     <div>
+      <a href="#main-content" className="sr-only focus:not-sr-only">Skip to Content</a>
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={theme === 'dark'} />
       <Sidebar />
-      <main className="pl-64">
+      <main id="main-content" className="pl-64">
         <About darkMode={theme === 'dark'} />
         <Experience darkMode={theme === 'dark'} />
         <Education darkMode={theme === 'dark'} />
         <section id="skills" className="min-h-screen bg-primary dark:bg-dark-background dark:text-light-text p-8 pt-24">
-          <h1 className="text-4xl font-bold">Skills</h1>
+          <h2 className="text-4xl font-bold">Skills</h2>
           <p className="text-text dark:text-gray-400">My skills...</p>
         </section>
-
         <section id="projects" className="min-h-screen bg-background dark:bg-dark-background dark:text-light-text p-8 pt-24 pb-16">
-          <h1 className="text-4xl font-bold">Projects</h1>
+          <h2 className="text-4xl font-bold">Projects</h2>
           <p>My projects...</p>
         </section>
       </main>

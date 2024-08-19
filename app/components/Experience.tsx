@@ -14,8 +14,8 @@ const workExperience = [
       'Automated workflows using PowerShell scripts and Automic.',
       'Managed CI/CD pipelines using Azure DevOps.',
     ],
-    logoLight: '/diamondback-energy-logo.png',  // Light mode logo
-    logoDark: '/FANG_BIG.png',    // Dark mode logo
+    logoLight: '/diamondback-energy-logo.png',
+    logoDark: '/FANG_BIG.png',
   },
   {
     company: 'Consolidated Nuclear Security (CNS) Pantex Plant',
@@ -26,8 +26,8 @@ const workExperience = [
       'Led the upgrade of legacy desktop applications for Windows 10 compatibility.',
       'Designed and developed desktop applications using C#, .NET, and WPF.',
     ],
-    logoLight: '/pantex-logo.png',   // Light mode logo
-    logoDark: '/pantex-logo.png',     // Dark mode logo
+    logoLight: '/pantex-logo.png',
+    logoDark: '/pantex-logo.png',
   },
   {
     company: 'Texas Tech Application Development & Support',
@@ -37,15 +37,15 @@ const workExperience = [
       'Developed new modules for a payment system using Python 2.7 and Flask.',
       'Fixed bugs in the event management and ticketing system.',
     ],
-    logoLight: '/texas-tech-logo.png', // Light mode logo
-    logoDark: '/texas-tech-logo.png',   // Dark mode logo
+    logoLight: '/texas-tech-logo.png',
+    logoDark: '/texas-tech-logo.png',
   },
 ];
 
 const Experience: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
     <section id="experience" className="min-h-screen bg-primary dark:bg-dark-background dark:text-light-text p-8 pt-24">
-      <h1 className="text-4xl font-bold mb-8">Experience</h1>
+      <h2 className="text-4xl font-bold mb-8">Experience</h2>
       <div className="space-y-16">
         {workExperience.map((experience, index) => (
           <div key={index} className="flex items-start justify-between">
@@ -61,17 +61,16 @@ const Experience: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             <div className="flex-shrink-0 w-64 h-64 flex items-start justify-center ml-8">
               <Image
                 src={darkMode ? experience.logoDark : experience.logoLight}
-                alt={`${experience.company} logo`}
+                alt={`${experience.company} Logo`}
                 width={256}
                 height={256}
-                className=""
+                className="object-contain"
               />
             </div>
           </div>
         ))}
       </div>
     </section>
-
   );
 };
 
