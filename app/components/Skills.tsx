@@ -8,11 +8,15 @@ import { motion } from 'framer-motion';
 export const skillsData = [
   {
     category: 'Programming Languages',
-    skills: ['C# (.NET framework, WPF)', 'C', 'C++', 'React', 'Next', 'TypeScript', 'JavaScript', 'Java (Spring framework)', 'MATLAB', 'Python (Tensorflow, PyTorch)'],
+    skills: ['C#', 'C', 'C++', 'TypeScript', 'JavaScript', 'Java', 'MATLAB', 'Python'],
   },
   {
-    category: 'Tools and IDES',
-    skills: ['Apollo GraphQL', 'Cmake', 'VSCode', 'Visual Studio', 'PyCharm', 'Postman', 'Insomnia'],
+    category: 'Frameworks and Libraries',
+    skills: ['Automic', 'Informatica', '.NET framework', '.NET Core 3.1', 'WPF (Windows Presentation Form)', 'Power Apps Platform', 'React', 'Next.js', 'Spring framework', 'TensorFlow', 'PyTorch', 'Keras', 'NumPy', 'SciPy', 'Scikit-Learn', 'Pandas', 'MatPlotLib', 'National Instruments LabView', 'National Instruments Diadem', 'National Instruments TestStand'],
+  },
+  {
+    category: 'Tools and IDEs',
+    skills: ['Apollo GraphQL', 'CMake', 'VSCode', 'Visual Studio', 'PyCharm', 'Postman', 'Insomnia'],
   },
   {
     category: 'Cloud',
