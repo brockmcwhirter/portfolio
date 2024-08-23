@@ -5,16 +5,16 @@ const educationData = [
   {
     institution: 'Johns Hopkins University',
     degree: 'Master of Science in Electrical & Computer Engineering',
-    period: '(IN-PROGRESS)',
+    period: 'In Progress',
     coursework: [
       'Machine Learning using Signal Processing',
       'Cloud Computing (AWS)',
       'Digital Signal Processing',
       'Computer Graphics (C++/OpenGL)',
-      'Deep Neural Networks (Python/Tensorflow)',
+      'Deep Neural Networks (Python/TensorFlow)',
     ],
-    logoLight: '/jhu-white-logo.png', // White logo for dark mode
-    logoDark: '/JHU-logo.png', // Original logo for light mode
+    logoLight: '/jhu-white-logo.png',
+    logoDark: '/JHU-logo.png',
   },
   {
     institution: 'Texas Tech University',
@@ -28,8 +28,8 @@ const educationData = [
       'Machine Learning',
       'Pattern Recognition',
     ],
-    logoLight: '/texas-tech-logo.png', // Same logo for both modes
-    logoDark: '/texas-tech-logo.png', // Same logo for both modes
+    logoLight: '/texas-tech-logo.png',
+    logoDark: '/texas-tech-logo.png',
   },
   {
     institution: 'South Plains College',
@@ -37,13 +37,12 @@ const educationData = [
     period: 'Graduated: December 2017',
     coursework: [
       'Engineering Graphics (AutoCAD)',
-      'Fundamentals of Programming I (C++)',
-      'Fundamentals of Programming II (C++/OOP)',
-      'Calculus I, II, III',
+      'Fundamentals of Programming I & II (C++)',
+      'Calculus I-III',
       'Differential Equations',
     ],
-    logoLight: '/spc-orange-logo.png', // Orange logo for dark mode
-    logoDark: '/spc-orange-logo.png', // Original logo for light mode
+    logoLight: '/spc-orange-logo.png',
+    logoDark: '/spc-orange-logo.png',
   },
 ];
 
@@ -68,8 +67,7 @@ const Education: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 aria-labelledby={`edu-${index}`}
               >
                 <li>
-                  <strong>Relevant Coursework:</strong>{' '}
-                  {edu.coursework.join(', ')}
+                  <strong>Relevant Coursework:</strong> {edu.coursework.join(', ')}
                 </li>
               </ul>
             </div>
