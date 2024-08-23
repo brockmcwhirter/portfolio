@@ -26,10 +26,6 @@ const Home: React.FC = () => {
         <Experience darkMode={theme === 'dark'} />
         <Education darkMode={theme === 'dark'} />
         <Skills />
-        <section id="projects" className="min-h-screen bg-background dark:bg-dark-background dark:text-light-text p-8 pt-24 pb-16">
-          <h2 className="text-4xl font-bold">Projects</h2>
-          <p>My projects...</p>
-        </section>
       </main>
       <Footer />
     </div>

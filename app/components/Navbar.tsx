@@ -35,7 +35,6 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDarkMode, darkMode }) => {
           <Link href="#experience" aria-label="Experience" className="text-text dark:text-light-text hover:text-secondary dark:hover:text-accent">Experience</Link>
           <Link href="#education" aria-label="Education" className="text-text dark:text-light-text hover:text-secondary dark:hover:text-accent">Education</Link>
           <Link href="#skills" aria-label="Skills" className="text-text dark:text-light-text hover:text-secondary dark:hover:text-accent">Skills</Link>
-          <Link href="#projects" aria-label="Projects" className="text-text dark:text-light-text hover:text-secondary dark:hover:text-accent">Projects</Link>
         </div>
         <button
           onClick={toggleDarkMode}
