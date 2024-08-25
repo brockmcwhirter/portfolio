@@ -14,9 +14,9 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
   return (
     <section
       id="about"
-      className={`min-h-screen p-6 sm:p-8 pt-24 scroll-mt-3 ${darkMode ? 'bg-dark-background text-light-text' : 'bg-primary text-text'}`}
+      className={`min-h-screen w-full p-6 sm:p-8 pt-24 scroll-mt-3 ${darkMode ? 'bg-dark-background text-light-text' : 'bg-primary text-text'}`}
     >
-      <div className="max-w-full sm:max-w-6xl">
+      <div className="max-w-full sm:max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold">Welcome!</h2>
         <div className="mt-8 space-y-4">
           {content.map((paragraph, index) => (
