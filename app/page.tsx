@@ -17,17 +17,17 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col md:flex-row">
       <a href="#main-content" className="sr-only focus:not-sr-only">Skip to Content</a>
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={theme === 'dark'} />
       <Sidebar />
-      <main id="main-content" className="pl-64">
+      <main id="main-content" className="flex-1 p-4 md:pl-64 mt-32 md:mt-0">
         <About darkMode={theme === 'dark'} />
         <Experience darkMode={theme === 'dark'} />
         <Education darkMode={theme === 'dark'} />
         <Skills />
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 };

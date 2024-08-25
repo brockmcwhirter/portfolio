@@ -1,10 +1,8 @@
-// Skills.tsx
 'use client';
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-// skillsData.ts
 export const skillsData = [
   {
     category: 'Programming Languages',
@@ -31,9 +29,6 @@ export const skillsData = [
     skills: ['PowerShell', 'Bash', 'WSL (Windows Subsystem for Linux)'],
   },
 ];
-
-
-
 const Skills: React.FC = () => {
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
 
@@ -42,7 +37,7 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="min-h-screen bg-primary dark:bg-dark-background dark:text-light-text p-8 pt-24">
+    <section id="skills" className="min-h-screen bg-primary dark:bg-dark-background dark:text-light-text p-8 pt-24 scroll-mt-3">
       <h2 className="text-4xl font-bold mb-8">Skills</h2>
       <div className="space-y-4">
         {skillsData.map((item, index) => (

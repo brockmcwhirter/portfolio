@@ -14,17 +14,19 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
   return (
     <section
       id="about"
-      className={`min-h-screen p-8 pt-24 ${darkMode ? 'bg-dark-background text-light-text' : 'bg-primary text-text'}`}
+      className={`min-h-screen p-6 sm:p-8 pt-24 scroll-mt-3 ${darkMode ? 'bg-dark-background text-light-text' : 'bg-primary text-text'}`}
     >
-      <h2 className="text-4xl font-bold">Welcome!</h2>
-      <div className="max-w-6xl">
-        {content.map((paragraph, index) => (
-          <p key={index} className="mt-4 text-lg indent-8">
-            {paragraph}
-          </p>
-        ))}
+      <div className="max-w-full sm:max-w-6xl">
+        <h2 className="text-3xl sm:text-4xl font-bold">Welcome!</h2>
+        <div className="mt-8 space-y-4">
+          {content.map((paragraph, index) => (
+            <p key={index} className="text-base sm:text-lg indent-4 sm:indent-8">
+              {paragraph}
+            </p>
+          ))}
+        </div>
         <div className="mt-8">
-          <p className="text-lg">
+          <p className="text-base sm:text-lg">
             Interested in a quick overview? View my resume below.
           </p>
           <a
