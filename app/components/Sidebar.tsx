@@ -38,33 +38,33 @@ const Sidebar: React.FC = () => {
             Brock McWhirter
           </h2>
           <div className="flex items-center text-text dark:text-light-text mt-2">
-            <FaMapMarkerAlt className="mr-2 icon" size={24} />
+            <FaMapMarkerAlt className="mr-2 text-text dark:text-light-text" size={24} />
             <span className="bg-transparent">Lubbock, Texas</span>
           </div>
           <div className="mt-4 flex flex-col items-center space-y-4">
             <a
               href="mailto:brock@brockmcwhirter.dev"
-              className="hover:underline bg-transparent icon"
+              className="hover:underline bg-transparent"
               title="Email"
               aria-label="Send an Email to Brock McWhirter"
             >
-              <FaEnvelope size={50} />
+              <FaEnvelope className="text-text dark:text-light-text" size={50} />
             </a>
             <a
               href="https://www.linkedin.com/in/macky-brock-mcwhirter-2053b2159/"
-              className="hover:underline bg-transparent icon"
+              className="hover:underline bg-transparent"
               title="LinkedIn"
               aria-label="Visit Brock McWhirter's LinkedIn Profile"
             >
-              <FaLinkedin size={50} />
+              <FaLinkedin className="text-text dark:text-light-text" size={50} />
             </a>
             <a
               href="https://github.com/brockmcwhirter"
-              className="hover:underline bg-transparent icon"
+              className="hover:underline bg-transparent"
               title="GitHub"
               aria-label="Visit Brock McWhirter's GitHub Profile"
             >
-              <FaGithub size={50} />
+              <FaGithub className="text-text dark:text-light-text" size={50} />
             </a>
           </div>
         </div>
