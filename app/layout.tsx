@@ -19,29 +19,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Script to set theme before hydration */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                let theme = localStorage.getItem('theme') || 'system';
-                if (theme === 'system') {
-                  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-                  theme = darkModeMediaQuery.matches ? 'dark' : 'light';
-                }
-                document.documentElement.classList.add(theme);
-              })();
-            `,
-          }}
-        />
+        {/* Add a viewport meta tag for responsive design */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${inter.className} bg-primary dark:bg-dark-background text-text dark:text-light-text`}>
-        <ClientWrapper>
-          <ThemeProvider attribute="class" enableSystem={true} defaultTheme="system">
+      <body className={`${inter.className} bg-primary text-text`}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <ClientWrapper>
             {children}
-          </ThemeProvider>
-        </ClientWrapper>
+          </ClientWrapper>
+        </ThemeProvider>
       </body>
     </html>
   );
