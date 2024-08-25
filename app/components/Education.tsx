@@ -50,12 +50,15 @@ const Education: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
     <section
       id="education"
-      className="min-h-screen bg-background dark:bg-dark-background dark:text-light-text p-8 pt-24"
+      className="min-h-screen bg-background dark:bg-dark-background dark:text-light-text p-8 pt-24 scroll-mt-3"
     >
       <h2 className="text-4xl font-bold mb-8">Education</h2>
       <div className="space-y-16">
         {educationData.map((edu, index) => (
-          <div key={index} className="flex items-start justify-between">
+          <div
+            key={index}
+            className="flex flex-col sm:flex-row items-start justify-between"
+          >
             <div className="sm:w-3/4 max-w-full">
               <h3 className="text-2xl font-bold" id={`edu-${index}`}>
                 {edu.institution}
@@ -67,11 +70,12 @@ const Education: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 aria-labelledby={`edu-${index}`}
               >
                 <li>
-                  <strong>Relevant Coursework:</strong> {edu.coursework.join(', ')}
+                  <strong>Relevant Coursework:</strong>{' '}
+                  {edu.coursework.join(', ')}
                 </li>
               </ul>
             </div>
-            <div className="flex-shrink-0 w-64 h-64 flex items-start justify-center ml-8">
+            <div className="flex-shrink-0 w-64 h-64 flex items-start justify-center mt-4 sm:mt-0 ml-0 sm:ml-8">
               <Image
                 src={darkMode ? edu.logoLight : edu.logoDark}
                 alt={`${edu.institution} logo`}

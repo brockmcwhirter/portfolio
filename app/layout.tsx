@@ -18,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        {/* Add a viewport meta tag for responsive design */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body className={`${inter.className} bg-primary dark:bg-dark-background text-text dark:text-light-text`}>
         <ThemeProvider attribute="class" enableSystem={true} defaultTheme="system">
           <ClientWrapper>
             {children}
